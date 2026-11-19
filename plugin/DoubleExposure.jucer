@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="DXn8Bm" name="DoubleExposure" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" headerPath="..\..\..\shared&#10;..\..\..\external"
+              pluginFormats="buildStandalone,buildVST3" lv2Uri="https://foo.bar"
+              pluginVST3Category="Delay" pluginManufacturer="Moebius" companyName="moebius_metromicon"
+              version="0.1.0" companyWebsite="https://github.com/MoebiusMetromicon"
+              defines="TEST">
+  <MAINGROUP id="zX60MM" name="DoubleExposure">
+    <GROUP id="{189A8DD6-64FF-BCE2-FAFE-DFEDC74D364B}" name="Ressources">
+      <FILE id="BA39Qh" name="background.png" compile="0" resource="1" file="Ressources/background.png"/>
+      <FILE id="ZNTZqL" name="footswitch_down.png" compile="0" resource="1"
+            file="Ressources/footswitch_down.png"/>
+      <FILE id="RaZ7Mj" name="footswitch_up.png" compile="0" resource="1"
+            file="Ressources/footswitch_up.png"/>
+      <FILE id="wDlBpM" name="knob.knob" compile="0" resource="1" file="Ressources/knob.knob"/>
+      <FILE id="z7Qrvm" name="knob.png" compile="0" resource="1" file="Ressources/knob.png"/>
+      <FILE id="gPDnbo" name="knob_1_fixed.png" compile="0" resource="1"
+            file="Ressources/knob_1_fixed.png"/>
+      <FILE id="zUDkV9" name="knob_1_movable.png" compile="0" resource="1"
+            file="Ressources/knob_1_movable.png"/>
+      <FILE id="FWkHxf" name="led_green_1.png" compile="0" resource="1" file="Ressources/led_green_1.png"/>
+      <FILE id="wvN4hL" name="led_green_2.png" compile="0" resource="1" file="Ressources/led_green_2.png"/>
+      <FILE id="ThYv3R" name="led_off.png" compile="0" resource="1" file="Ressources/led_off.png"/>
+      <FILE id="NyZynz" name="led_orange_1.png" compile="0" resource="1"
+            file="Ressources/led_orange_1.png"/>
+      <FILE id="jJiNHB" name="led_orange_2.png" compile="0" resource="1"
+            file="Ressources/led_orange_2.png"/>
+      <FILE id="GgDo24" name="led_red_1.png" compile="0" resource="1" file="Ressources/led_red_1.png"/>
+      <FILE id="er1NHN" name="led_yellow_1.png" compile="0" resource="1"
+            file="Ressources/led_yellow_1.png"/>
+      <FILE id="CNuhbv" name="led_yellow_2.png" compile="0" resource="1"
+            file="Ressources/led_yellow_2.png"/>
+      <FILE id="Ms4dKQ" name="toggle_off.png" compile="0" resource="1" file="Ressources/toggle_off.png"/>
+      <FILE id="sOfo0T" name="toggle_on.png" compile="0" resource="1" file="Ressources/toggle_on.png"/>
+    </GROUP>
+    <GROUP id="{014F5268-B266-17FE-77B7-23E7F28714C4}" name="Source">
+      <GROUP id="{B00B621A-7258-FF51-A60A-4FD7FE18DE04}" name="GUI">
+        <FILE id="mepwfT" name="Footswitch.h" compile="0" resource="0" file="Source/GUI/Footswitch.h"/>
+        <FILE id="Ueuaw4" name="LEDMeter.h" compile="0" resource="0" file="Source/GUI/LEDMeter.h"/>
+        <FILE id="m9Vy4R" name="MySlider.h" compile="0" resource="0" file="Source/GUI/MySlider.h"/>
+        <FILE id="IVIQtf" name="MyToggle.h" compile="0" resource="0" file="Source/GUI/MyToggle.h"/>
+        <FILE id="SnGfSE" name="ToggleLED.h" compile="0" resource="0" file="Source/GUI/ToggleLED.h"/>
+      </GROUP>
+      <GROUP id="{76C30BC7-EA10-785C-79B5-65F693803BBC}" name="shared">
+        <FILE id="dKmajg" name="HelperFunctions.h" compile="0" resource="0"
+              file="../shared/HelperFunctions.h"/>
+        <FILE id="kpHv8U" name="MetaParameter.h" compile="0" resource="0" file="../shared/MetaParameter.h"/>
+        <FILE id="CqNSSX" name="SingleSampleFilter.h" compile="0" resource="0"
+              file="../shared/SingleSampleFilter.h"/>
+        <FILE id="BqhIxu" name="SingleSampleVerb.h" compile="0" resource="0"
+              file="../shared/SingleSampleVerb.h"/>
+        <FILE id="JXqP3D" name="TapeDelayLooperCore.h" compile="0" resource="0"
+              file="../shared/TapeDelayLooperCore.h"/>
+        <FILE id="bfX8o8" name="TapeLine.h" compile="0" resource="0" file="../shared/TapeLine.h"/>
+      </GROUP>
+      <FILE id="yKTic8" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="PrIuqD" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="GxPrTJ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="CKim1q" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <GROUP id="{6648F059-FA5B-4661-894C-077ACB742100}" name="stmlib">
+      <GROUP id="{B5BF23A0-39AC-A79A-C691-E929F379C192}" name="stmlib">
+        <GROUP id="{71CF2B2A-674C-9895-2B4E-32F6685671B2}" name="algorithms">
+          <FILE id="sucmMg" name="note_stack.h" compile="0" resource="0" file="../../stmlib/stmlib/algorithms/note_stack.h"/>
+          <FILE id="NbtgIn" name="pattern_predictor.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/algorithms/pattern_predictor.h"/>
+          <FILE id="gZxuwH" name="tiny_map.h" compile="0" resource="0" file="../../stmlib/stmlib/algorithms/tiny_map.h"/>
+          <FILE id="CbXQwB" name="voice_allocator.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/algorithms/voice_allocator.h"/>
+        </GROUP>
+        <GROUP id="{BBBE5B72-3623-A30F-E3EC-CA76F56FE637}" name="dsp">
+          <FILE id="u5HsI6" name="atan.cc" compile="1" resource="0" file="../../stmlib/stmlib/dsp/atan.cc"/>
+          <FILE id="gafDng" name="atan.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/atan.h"/>
+          <FILE id="xEaib3" name="atan_approximations.py" compile="0" resource="1"
+                file="../../stmlib/stmlib/dsp/atan_approximations.py"/>
+          <FILE id="X3dKSr" name="cosine_oscillator.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/dsp/cosine_oscillator.h"/>
+          <FILE id="Vvu1SV" name="delay_line.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/delay_line.h"/>
+          <FILE id="nqAr99" name="dsp.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/dsp.h"/>
+          <FILE id="hp2gnS" name="filter.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/filter.h"/>
+          <FILE id="TThd2G" name="hysteresis_filter.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/dsp/hysteresis_filter.h"/>
+          <FILE id="alCvUj" name="hysteresis_quantizer.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/dsp/hysteresis_quantizer.h"/>
+          <FILE id="lY4Sw5" name="limiter.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/limiter.h"/>
+          <FILE id="vJQfpk" name="parameter_interpolator.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/dsp/parameter_interpolator.h"/>
+          <FILE id="JBlDZ4" name="polyblep.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/polyblep.h"/>
+          <FILE id="jYxffZ" name="rsqrt.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/rsqrt.h"/>
+          <FILE id="JcqH6r" name="sample_rate_converter.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/dsp/sample_rate_converter.h"/>
+          <FILE id="FH8Ji2" name="units.cc" compile="1" resource="0" file="../../stmlib/stmlib/dsp/units.cc"/>
+          <FILE id="bhaPCT" name="units.h" compile="0" resource="0" file="../../stmlib/stmlib/dsp/units.h"/>
+        </GROUP>
+        <GROUP id="{3E4D4787-1A74-693D-EA77-3D21B22985A8}" name="fft">
+          <FILE id="F3FbTT" name="shy_fft.h" compile="0" resource="0" file="../../stmlib/stmlib/fft/shy_fft.h"/>
+        </GROUP>
+        <GROUP id="{9C153650-84C0-45C1-F90C-C1DFF658166D}" name="midi">
+          <FILE id="AU2BVQ" name="midi.h" compile="0" resource="0" file="../../stmlib/stmlib/midi/midi.h"/>
+        </GROUP>
+        <GROUP id="{13F3C0EE-3201-FF98-5630-3D12B59EC41E}" name="programming">
+          <GROUP id="{A5FCB12B-90A8-35CF-2C3E-9AA088E60298}" name="jtag">
+            <FILE id="hSbvPj" name="erase_f0xx.cfg" compile="0" resource="1" file="../../stmlib/stmlib/programming/jtag/erase_f0xx.cfg"/>
+            <FILE id="Vb0q7A" name="erase_f4xx.cfg" compile="0" resource="1" file="../../stmlib/stmlib/programming/jtag/erase_f4xx.cfg"/>
+            <FILE id="XyAElh" name="erase_f10x.cfg" compile="0" resource="1" file="../../stmlib/stmlib/programming/jtag/erase_f10x.cfg"/>
+            <FILE id="CF0BbW" name="erase_f37x.cfg" compile="0" resource="1" file="../../stmlib/stmlib/programming/jtag/erase_f37x.cfg"/>
+            <FILE id="iQ4N4A" name="erase_h7xx.cfg" compile="0" resource="1" file="../../stmlib/stmlib/programming/jtag/erase_h7xx.cfg"/>
+          </GROUP>
+          <GROUP id="{E6FB885E-296F-9568-3112-A9C2BA10CFC8}" name="serial">
+            <FILE id="RFVOPs" name="stm32loader.py" compile="0" resource="1" file="../../stmlib/stmlib/programming/serial/stm32loader.py"/>
+          </GROUP>
+          <FILE id="yE48YR" name="merge_hex.awk" compile="0" resource="1" file="../../stmlib/stmlib/programming/merge_hex.awk"/>
+        </GROUP>
+        <GROUP id="{C3ED4BD7-FFCF-DB86-127B-BDD700DA2C67}" name="system">
+          <FILE id="w5uf58" name="flash_programming.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/system/flash_programming.h"/>
+          <FILE id="QZQLVb" name="page_storage.h" compile="0" resource="0" file="../../stmlib/stmlib/system/page_storage.h"/>
+          <FILE id="rhTpnP" name="sector_storage_f4xx.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/system/sector_storage_f4xx.h"/>
+          <FILE id="VEFUf3" name="sector_storage_h7xx.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/system/sector_storage_h7xx.h"/>
+          <FILE id="xEEpvU" name="storage.h" compile="0" resource="0" file="../../stmlib/stmlib/system/storage.h"/>
+          <FILE id="YwMKqY" name="system_clock.cc" compile="1" resource="0" file="../../stmlib/stmlib/system/system_clock.cc"/>
+          <FILE id="qnfOJu" name="system_clock.h" compile="0" resource="0" file="../../stmlib/stmlib/system/system_clock.h"/>
+          <FILE id="Z2shvx" name="uid.h" compile="0" resource="0" file="../../stmlib/stmlib/system/uid.h"/>
+        </GROUP>
+        <GROUP id="{14078B94-1ECC-2BA5-61EB-5503F63E20BD}" name="test">
+          <FILE id="VYDWMZ" name="wav_writer.h" compile="0" resource="0" file="../../stmlib/stmlib/test/wav_writer.h"/>
+        </GROUP>
+        <GROUP id="{43867B04-D72B-97F7-208B-E967791398A6}" name="tools">
+          <FILE id="DlpUdq" name="__init__.py" compile="0" resource="1" file="../../stmlib/stmlib/tools/__init__.py"/>
+          <FILE id="ZFApAS" name="resources_compiler.py" compile="0" resource="1"
+                file="../../stmlib/stmlib/tools/resources_compiler.py"/>
+        </GROUP>
+        <GROUP id="{1F543453-E42E-8754-A7A2-107D6F30A4CC}" name="ui">
+          <FILE id="r5Yzti" name="event_queue.h" compile="0" resource="0" file="../../stmlib/stmlib/ui/event_queue.h"/>
+        </GROUP>
+        <GROUP id="{BA11A0F0-9F06-A883-2E19-1858C9222722}" name="utils">
+          <FILE id="A5rFrf" name="buffer_allocator.h" compile="0" resource="0"
+                file="../../stmlib/stmlib/utils/buffer_allocator.h"/>
+          <FILE id="HKRZmz" name="crc32.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/crc32.h"/>
+          <FILE id="AYAXFe" name="dsp.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/dsp.h"/>
+          <FILE id="Gixhkw" name="gate_flags.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/gate_flags.h"/>
+          <FILE id="mbdjDx" name="murmurhash3.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/murmurhash3.h"/>
+          <FILE id="x3ZvNy" name="random.cc" compile="1" resource="0" file="../../stmlib/stmlib/utils/random.cc"/>
+          <FILE id="b2T4TC" name="random.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/random.h"/>
+          <FILE id="vD4nw2" name="ring_buffer.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/ring_buffer.h"/>
+          <FILE id="m96CqD" name="stream_buffer.h" compile="0" resource="0" file="../../stmlib/stmlib/utils/stream_buffer.h"/>
+        </GROUP>
+        <FILE id="ZrR9tL" name="LICENSE" compile="0" resource="1" file="../../stmlib/stmlib/LICENSE"/>
+        <FILE id="sljRPH" name="makefile.inc" compile="0" resource="1" file="../../stmlib/stmlib/makefile.inc"/>
+        <FILE id="ALMDeD" name="README.md" compile="0" resource="1" file="../../stmlib/stmlib/README.md"/>
+        <FILE id="yXCM3r" name="stmlib.h" compile="0" resource="0" file="../../stmlib/stmlib/stmlib.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="DoubleExposure" enablePluginBinaryCopyStep="1"
+                       useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="DoubleExposure" enablePluginBinaryCopyStep="1"
+                       winArchitecture="x64" useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="..\external\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="..\external\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
