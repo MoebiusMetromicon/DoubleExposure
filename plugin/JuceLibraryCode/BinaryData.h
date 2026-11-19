@@ -9,7 +9,7 @@
 namespace BinaryData
 {
     extern const char*   background_png;
-    const int            background_pngSize = 2903751;
+    const int            background_pngSize = 2915051;
 
     extern const char*   footswitch_down_png;
     const int            footswitch_down_pngSize = 14973;
