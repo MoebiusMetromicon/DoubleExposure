@@ -1,0 +1,9 @@
+[submodule "external/JUCE"]
+	path = external/JUCE
+	url = https://github.com/juce-framework/JUCE.git
+[submodule "external/stmlib"]
+	path = external/stmlib
+	url = https://github.com/pichenettes/stmlib.git
+[submodule "external/DaisyExamples"]
+	path = external/DaisyExamples
+	url = https://github.com/daisyaudio/DaisyExamples.git
