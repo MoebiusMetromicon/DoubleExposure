@@ -2,6 +2,8 @@
 
 DoubleExposure is digital tape-style echo and loop-layering audio effect. Currently it exists only as a native plug-in for your DAW, but will eventually become its own standalone FX pedal.
 
+<img width="1890" height="1654" alt="TapeDelayLooper_FronPanel_V2_1" src="https://github.com/user-attachments/assets/7c23fa7b-7b08-429d-85ed-3603fdec6efb" />
+
 ## Concept
 
 Capturing short loops on a tape delay with carefully controlled feedback is one of my favourite techniques to create interesting drones. But as soon as you find a nice loop, you can't use your delay pedal as an actual delay anymore. This sparked the inital idea for DoubleExposure: Loop the current echo signal in seperate buffers, so that the live input is still echoed normally. The user-facing controls act as one-knob meta settings, controlling multiple different parameters under the hood.
